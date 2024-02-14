@@ -3,20 +3,26 @@ function getInput(id){
     return num;
 }
 function getArea(objName, value1, value2){
-    const a= `\'${objName}`+`${value1}\'`;
-    console.log(typeof a);
+    const a= objName+value1
     const base= getInput(a);
-    // const base= getInput('triangleBase');
-    // const base= getInput(`\'${objName}`+`${value1}\'`);
-    const b= `\'${objName}`+`${value2}\'`;
+    const b= objName+value2
     const height= getInput(b);
-    // const height= getInput('triangleHeight');
-    // const height= getInput(`\'${objName}`+`${value2}\'`);
-    const area= .5*base*height;
+    let area=0;
+    if(objName==='triangle' || objName==='rhombus' || objName==='pentagon'){
+        area= .5*base*height;
+    }
+    else if(objName==='rectangle' || objName==='parallelogram'){
+        area= base*height;
+    }
+    else if(objName==='ellipse'){
+        area= 3.1416*base*height;
+    }
+    else{
+        area= 'Wrong objName';
+    }
+    
     const div= document.getElementById('answers') ;
     const text= document.createElement('p')
     text.innerText= `Area of ${objName} : ${area}`
     div.appendChild(text);
-    //  console.log(`Area of triangle : ${area}`)
-    console.log(`\'${objName}`+`${value1}\'`)
 }
