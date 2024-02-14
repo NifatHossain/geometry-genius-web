@@ -29,7 +29,7 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Triange</h2>
                       <p>Area(A) = 0.5 x b x h</p>
-                      <div class="flex flex-col lg:flex-row">
+                      <div class="flex flex-col lg:flex-row gap-2">
                         <div>
                           <input type="text" id="triangleBase" placeholder="base" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span >cm</span>
                         </div>
@@ -54,9 +54,14 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area(A) = w x l</p>
-                      <div class="flex">
-                        <input type="text" id="rectangleWidth" placeholder="width" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
-                        <input type="text" id="rectangleLength" placeholder="length" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                      <div class="flex flex-col lg:flex-row gap-2">
+                        <div>
+                          <input type="text" id="rectangleWidth" placeholder="width" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
+                        </div>
+                        <div>
+                          <input type="text" id="rectangleLength" placeholder="length" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                        </div>
+                        
                       </div>
                       <div class="card-actions w-full m-10">
                         <button id="button" onclick="getArea('rectangle', 'Width', 'Length')" class="btn btn-primary w-full text-white">Calculate</button>
@@ -71,9 +76,14 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Parallelogram</h2>
                       <p>Area(A) = b x h</p>
-                      <div class="flex">
-                        <input type="text" id="parallelogramBase" placeholder="base" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
-                        <input type="text" id="parallelogramHeight" placeholder="height" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                      <div class="flex flex-col lg:flex-row gap-2">
+                        <div>
+                          <input type="text" id="parallelogramBase" placeholder="base" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
+                        </div>
+                        <div>
+                          <input type="text" id="parallelogramHeight" placeholder="height" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                        </div>
+                        
                       </div>
                       <div class="card-actions w-full my-10">
                         <button id="button" onclick="getArea('parallelogram', 'Base', 'Height')" class="btn btn-primary w-full text-white">Calculate</button>
@@ -88,9 +98,14 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rhombus</h2>
                       <p>Area(A) = 0.5 x d<span><sub>1</sub></span> x <span>d<sub>2</sub></span></p>
-                      <div class="flex">
-                        <input type="text" id="rhombusD1" placeholder="d1" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
-                        <input type="text" id="rhombusD2" placeholder="d2" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                      <div class="flex flex-col lg:flex-row gap-2">
+                        <div>
+                          <input type="text" id="rhombusD1" placeholder="d1" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
+                        </div>
+                        <div>
+                          <input type="text" id="rhombusD2" placeholder="d2" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                        </div>
+                        
                       </div>
                       <div class="card-actions w-full m-10">
                         <button id="button" onclick="getArea('rhombus', 'D1', 'D2')" class="btn btn-primary w-full text-white">Calculate</button>
@@ -105,9 +120,14 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Pentagon</h2>
                       <p>Area(A) = 0.5 x p x b</p>
-                      <div class="flex">
-                        <input type="text" id="pentagonPerimeter" placeholder="perimeter" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
-                        <input type="text" id="pentagonApothem" placeholder="Apothem" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                      <div class="flex flex-col lg:flex-row gap-2">
+                        <div>
+                          <input type="text" id="pentagonPerimeter" placeholder="perimeter" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
+                        </div>
+                        <div>
+                          <input type="text" id="pentagonApothem" placeholder="Apothem" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                        </div>
+                        
                       </div>
                       <div class="card-actions w-full m-10">
                         <button id="button" onclick="getArea('pentagon', 'Perimeter', 'Apothem')" class="btn btn-primary w-full text-white">Calculate</button>
@@ -122,9 +142,14 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Ellipse</h2>
                       <p>Area(A) = &pi;ab</p>
-                      <div class="flex">
-                        <input type="text" id="ellipseMajor" placeholder="semi-major" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
-                        <input type="text" id="ellipseMinor" placeholder="semi-minor" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                      <div class="flex flex-col lg:flex-row gap-2">
+                        <div>
+                          <input type="text" id="ellipseMajor" placeholder="semi-major" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span class="mr-4">cm</span>
+                        </div>
+                        <div>
+                          <input type="text" id="ellipseMinor" placeholder="semi-minor" class="w-24 bg-slate-200 rounded-md px-2 mr-1"><span>cm</span>
+                        </div>
+                        
                       </div>
                       <div class="card-actions w-full m-10">
                         <button id="button" onclick="getArea('ellipse', 'Major', 'Minor')" class="btn btn-primary w-full text-white">Calculate</button>
@@ -133,7 +158,7 @@
                 </div>
             </div>
             <div>
-                <div id='answers' class="w-96 border-2 rounded-md h-96 md:h-[500px] p-4 mx-auto ">
+                <div id='answers' class="w-80 border-2 rounded-md h-96 md:h-[500px] p-4 mx-auto ">
                     <h2 class="text-3xl font-extrabold underline underline-offset-2 text-center">Area Calculation</h2>    
                 </div>
             </div>
